@@ -5,6 +5,12 @@
   "scripts": {
     "start:atomic": "node -r dotenv/config ./src/scenario-atomic.js",
     "start:all": "node -r dotenv/config ./src/scenario-all.js",
+    "start:scenario-1": "node -r dotenv/config ./src/scenario-1.js",
+    "start:scenario-2": "node -r dotenv/config ./src/scenario-2.js",
+    "start:scenario-3": "node -r dotenv/config ./src/scenario-3.js",
+    "start:scenario-4": "node -r dotenv/config ./src/scenario-4.js",
+    "start:scenario-5": "node -r dotenv/config ./src/scenario-5.js",
+    "start:scenario-6": "node -r dotenv/config ./src/scenario-6.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
