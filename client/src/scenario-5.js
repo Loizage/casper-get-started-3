@@ -21,9 +21,9 @@ const TRANSFER_AMOUNT = process.env.TRANSFER_AMOUNT || 2500000000;
     const masterKey = keyManager.randomMasterKey();
     const safeAccount = masterKey.deriveIndex(1);
     const safeAccount1 = masterKey.deriveIndex(2);
-    const safeAccount2 = masterKey.deriveIndex(2);
-    const browserAccount = masterKey.deriveIndex(3);
-    const mobileAccount = masterKey.deriveIndex(4);
+    const safeAccount2 = masterKey.deriveIndex(3);
+    const browserAccount = masterKey.deriveIndex(4);
+    const mobileAccount = masterKey.deriveIndex(5);
     
     console.log("Main account: " + safeAccount.publicKey.toHex());
     console.log("Safe account #1: " + safeAccount1.publicKey.toHex());
@@ -60,7 +60,7 @@ const TRANSFER_AMOUNT = process.env.TRANSFER_AMOUNT || 2500000000;
     const deployThreshold = 2;
     
     // 5. Deploy account changes using 'setAll' function.
-    console.log("\n 1. Set weight of both safe accounts to 3.");
+    console.log("\n 1. Set weight of all safe accounts to 3.");
     console.log("\n 2. Set weight of browserAccount and mobileAccount to 1.");
     console.log("\n 3. Set Keys Management Threshold to 3.");
     console.log("\n 4. Set Deploy Threshold to 2.");
