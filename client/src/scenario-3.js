@@ -42,8 +42,8 @@ const TRANSFER_AMOUNT = process.env.TRANSFER_AMOUNT || 2500000000;
     const AccountWeight = 1;
     // Every account weight is set to 1
     const accounts = [
-        { publicKey: mainAccount.publicKey, weight: 1 },
-        { publicKey: firstAccount.publicKey, weight: 1 }, 
+        { publicKey: mainAccount.publicKey, weight: AccountWeight },
+        { publicKey: firstAccount.publicKey, weight: AccountWeight }, 
     ];
     
     // 2. Set Keys Management Threshold to 2.
